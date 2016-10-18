@@ -1,6 +1,6 @@
 {
   "name": "modal",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "sasa+1 <sasaplus1@gmail.com>",
   "description": "control modal",
   "main": "./index.js",

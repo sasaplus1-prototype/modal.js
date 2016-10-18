@@ -130,18 +130,17 @@ Modal.prototype.show = function show(name) {
  * @param {String} name
  */
 Modal.prototype.hide = function hide(name) {
-  var modal = this.modals[name],
+  var stack = this.stack,
+      modal = this.modals[name],
       i;
 
   if (!modal) {
     return;
   }
 
-  i = this.stack.length - 1;
-
-  while (i--) {
-    if (this.stack[i].name === name) {
-      this.stask.splice(i, 1);
+  for (i = stack.length - 1; i >= 0; --i) {
+    if (stack[i].name === name) {
+      stack.splice(i, 1);
 
       break;
     }
