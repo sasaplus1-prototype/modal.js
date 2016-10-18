@@ -141,7 +141,7 @@ Modal.prototype.hide = function hide(name) {
 
   while (i--) {
     if (this.stack[i].name === name) {
-      this.stask.splice(i, 1);
+      this.stack.splice(i, 1);
 
       break;
     }
