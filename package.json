@@ -1,0 +1,26 @@
+{
+  "name": "modal",
+  "version": "0.1.0",
+  "author": "sasa+1 <sasaplus1@gmail.com>",
+  "description": "control modal",
+  "main": "./index.js",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sasaplus1-prototype/modal.js.git"
+  },
+  "scripts": {
+    "build": "npm run compile && npm run minify",
+    "compile": "npm run webpack -- --output-file modal.js",
+    "minify": "npm run webpack -- --optimize-minimize --output-file modal.min.js",
+    "webpack": "webpack --colors --display-error-details --progress"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "events": "^1.1.1",
+    "inherits": "^2.0.3"
+  }
+}
