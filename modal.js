@@ -102,6 +102,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @constructor
 	 */
 	function Modal() {
+	  // if forget `new`
+	  if (!(this instanceof Modal)) {
+	    return new Modal();
+	  }
+
 	  EventEmitter.call(this);
 
 	  // modal list
