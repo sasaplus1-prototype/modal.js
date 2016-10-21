@@ -15,7 +15,7 @@ var toString = Object.prototype.toString;
  */
 function isFunction(value) {
   return (
-    typeof value === 'function' || toString[call](value) === '[object Function]'
+    typeof value === 'function' || toString.call(value) === '[object Function]'
   );
 }
 
