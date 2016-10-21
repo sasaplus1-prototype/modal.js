@@ -76,7 +76,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 */
 	function isFunction(value) {
 	  return (
-	    typeof value === 'function' || toString[call](value) === '[object Function]'
+	    typeof value === 'function' || toString.call(value) === '[object Function]'
 	  );
 	}
 
